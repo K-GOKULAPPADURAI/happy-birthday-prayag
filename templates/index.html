@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Prayag's Birthday Wishes</title>
+    <style>
+        body {
+            background-color: #FF69B4;
+            font-family: Arial, sans-serif;
+            color: #FFFFFF;
+        }
+
+        h1 {
+            color: green;
+            font-size: 48px;
+            text-align: center;
+            margin-top: 50px;
+        }
+
+        h2 {
+            color: green;
+            font-size: 48px;
+            text-align: center;
+            margin-top: 50px;
+        }
+
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            margin-top: 50px;
+        }
+
+        .block {
+            background-color: green;
+            border-radius: 10px;
+            box-shadow: 5px 5px #C0C0C0;
+            color: #000000;
+            font-size: 24px;
+            margin: 10px;
+            padding: 20px;
+            text-align: center;
+            cursor: pointer;
+            transition: transform 0.2s ease-in-out;
+        }
+
+        .block:hover {
+            transform: scale(1.1);
+        }
+
+        #message {
+            background-color: #C0C0C0;
+            border-radius: 10px;
+            box-shadow: 5px 5px green;
+            color: #000000;
+            font-size: 24px;
+            margin: 0 auto;
+            max-width: 80%;
+            padding: 20px;
+            text-align: center;
+            margin-top: 50px;
+        }
+
+        #footer {
+            text-align: center;
+            margin-top: 50px;
+            color: white;
+        }
+
+        #moreQuotesButton {
+            background-color: #FFD700;
+            border-radius: 10px;
+            box-shadow: 5px 5px #C0C0C0;
+            color: #000000;
+            font-size: 24px;
+            margin: 20px;
+            padding: 20px;
+            text-align: center;
+            cursor: pointer;
+            transition: transform 0.2s ease-in-out;
+        }
+
+        #moreQuotesButton:hover {
+            transform: scale(1.1);
+        }
+
+        .slideshowButton {
+            background-color: orange;
+            border-radius: 10px;
+            box-shadow: 5px 5px #C0C0C0;
+            color: #FFFFFF;
+            font-size: 28px;
+            font-weight: bold;
+            margin: 20px;
+            padding: 20px;
+            text-align: center;
+            cursor: pointer;
+            transition: transform 0.2s ease-in-out;
+        }
+
+        .slideshowButton:hover {
+            transform: scale(1.1);
+        }
+    </style>
+</head>
+<body>
+    <h1>Happy Birthday to My Dear student Prayag Gajjar</h1>
+    <h2 style="color: gold;">મારા પ્રિય વિદ્યાર્થી પ્રયાગ ગજ્જરને જન્મદિવસની શુભકામનાઓ</h2>
+    <div class="container">
+        <div class="block" onclick="showMessage('આ ખાસ દિવસે, જેમ તમે જીવનનું બીજું વર્ષ ઉજવો છો, ત્યારે હું તમને મારા જન્મદિવસની હાર્દિક શુભેચ્છાઓ આપવા માટે થોડો સમય આપવા માંગુ છું. તમે માત્ર શૈક્ષણિક રીતે જ નહીં, પણ અમર્યાદ ક્ષમતા ધરાવતા એક નોંધપાત્ર વ્યક્તિ તરીકે પણ વિકાસ પામતા જોઈને મને ખૂબ જ આનંદ થાય છે.')">
+            <p>Click here to see a quote</p>
+        </div>
+        <div class="block" onclick="showMessage('તમારું સમર્પણ, દ્રઢતા અને ઉત્સાહ મને પ્રેરણા આપવામાં ક્યારેય નિષ્ફળ જશે નહીં. તમને દૃઢતા અને નિશ્ચય સાથે પડકારોનો સામનો કરતા જોઈને મને ગર્વ થાય છે')">
+            <p>Click here to see another quote</p>
+        </div>
+        <div class="block" onclick="showMessage('તમારી જિજ્ઞાસા અને શીખવાની ધગશ એ ખરેખર પ્રશંસનીય ગુણો છે જે નિઃશંકપણે તમારી ભાવિ સફળતાનો માર્ગ મોકળો કરશે.')">
+            <p>Click here to see one more quote</p>
+        </div>
+    </div>
+    <div class="message" id="message"></div>
+    <div id="footer">
+        <button id="moreQuotesButton" onclick="showRandomQuote()">More wishes</button>
+        <a class="slideshowButton" href="/slideshow" target="_blank">Click here to see my dear Prayag gajjar with his mom's Memories</a>
+    </div>
+    <script>
+         var quotes = [
+           "ગેમિંગ પ્રત્યેનો તમારો જુસ્સો અને તમારી સર્જનાત્મકતા તમને આવા આકર્ષક કારકિર્દીના માર્ગ માટે યોગ્ય બનાવે છે. મને કોઈ શંકા નથી કે તમારી પ્રતિભા અને નિશ્ચયથી તમે રમતના વિકાસ અને ડિઝાઇનની દુનિયામાં નોંધપાત્ર પ્રગતિ કરશો."
+           ,
+    
+            "તમારા માર્ગદર્શક તરીકે, મને તમારી યાત્રાનો સાક્ષી બનવાનો અને તમારા શૈક્ષણિક અને વ્યક્તિગત વિકાસનો એક ભાગ બનવાનો વિશેષાધિકાર મળ્યો છે. આ જન્મદિવસ તમે કેટલા દૂર આવ્યા છો અને આગળ રહેલી અમર્યાદ શક્યતાઓનું રિમાઇન્ડર બની રહે.",
+    
+    
+            "તે દરેક વ્યક્તિ માટે સ્પષ્ટ છે જે તમને જાણે છે કે તમે તમારી મમ્મી અને તમારા પરિવારને કેટલો પ્રેમ કરો છો. તમારું બોન્ડ તમે શેર કરો છો તે પ્રેમ અને કાળજીનું પ્રમાણપત્ર છે, અને તે સાક્ષી આપવા માટે એક સુંદર વસ્તુ છે",
+    
+            "અન્ય લોકો માટે તમારી વિચારશીલતા અને વિચારણા ક્યારેય ધ્યાન બહાર જતી નથી, અને તે તમારા આસપાસના લોકો દ્વારા તમને આટલા પ્રિય હોવાના ઘણા કારણો પૈકી એક છે.",
+
+            "જેમ જેમ તમે મીણબત્તીઓ ફૂંકો છો અને આજે તમારી ઇચ્છાઓ કરો છો, ત્યારે જાણો કે તમે તમારા પરિવાર અને મિત્રોના પ્રેમ અને સમર્થનથી ઘેરાયેલા છો. તમારો દિવસ હાસ્ય, આનંદ અને પ્રિય ક્ષણોથી ભરેલો રહે જેની સાથે તમે પ્રિય છો"
+        ];
+
+        var currentIndex = 0;
+
+        function showMessage(quote) {
+            document.getElementById("message").innerHTML = quote;
+            currentIndex = (currentIndex + 1) % quotes.length;
+        }
+
+        function showRandomQuote() {
+            var randomIndex = Math.floor(Math.random() * quotes.length);
+            showMessage(quotes[randomIndex]);
+        }
+
+        document.addEventListener('keydown', function(event) {
+            if (event.code === 'Tab') {
+                showMessage(quotes[currentIndex]);
+            }
+        });
+
+        window.onload = function() {
+            showMessage(quotes[currentIndex]);
+        };
+    </script>
+</body>
+</html>
